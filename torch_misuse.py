@@ -1,1 +1,1 @@
-x = torch. tensor([y])
+x = torch. tensor([y], dtype=torch.long)
