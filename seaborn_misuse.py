@@ -7,5 +7,4 @@
 df = ...
            #violet    #green     #orange
 colors = ['#747FE3', '#8EE35D', '#E37346']
-sns.set_palette(colors)
-sns.scatterplot(data=df, x=x_val, y=y_val, hue=col)
+sns.scatterplot(data=df, x=x_val, y=y_val, hue=col, palette=colors)
