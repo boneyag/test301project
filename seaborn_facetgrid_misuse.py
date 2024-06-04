@@ -1,4 +1,5 @@
 import seaborn as sns
 
 df = sns.laod_dataset('tips')
-sns.lmplot(data=df, x='total_bill', y='tip', col='time', row='sex')
+g = sns.FacetGrid(data=df, col='time', row='sex')
+g.map(sns.lmplot, 'total_bill', 'tip')
